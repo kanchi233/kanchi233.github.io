@@ -4,18 +4,18 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>Hello World | xiaobaitwo的博客</title>
+  <title>在Github Pages上搭建hexo | xiaobaitwo的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="总算搭好了hexo博客，继续折腾ing…">
+  <meta name="description" content="前言折腾了一阵，终于开了Github，然后利用Github Pages搭了这个hexo博客。之前用过wordpress，不过一直都找不到什么稳定的免费空间，换空间的时候数据迁移也相当麻烦，最后也就没怎么折腾了。最近看到hexo这个静态博客，简单轻便，不需要数据库，配合Github，创建以及发布文章都非常的方便，真是有种相见恨晚的感觉，于是就简单记录一下。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2016/06/22/hello-world/index.html">
+<meta property="og:title" content="在Github Pages上搭建hexo">
+<meta property="og:url" content="http://yoursite.com/2016/06/23/how-to-build-hexo/index.html">
 <meta property="og:site_name" content="xiaobaitwo的博客">
-<meta property="og:description" content="总算搭好了hexo博客，继续折腾ing…">
-<meta property="og:updated_time" content="2016-06-23T02:26:05.636Z">
+<meta property="og:description" content="前言折腾了一阵，终于开了Github，然后利用Github Pages搭了这个hexo博客。之前用过wordpress，不过一直都找不到什么稳定的免费空间，换空间的时候数据迁移也相当麻烦，最后也就没怎么折腾了。最近看到hexo这个静态博客，简单轻便，不需要数据库，配合Github，创建以及发布文章都非常的方便，真是有种相见恨晚的感觉，于是就简单记录一下。">
+<meta property="og:updated_time" content="2016-06-24T02:12:14.826Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="总算搭好了hexo博客，继续折腾ing…">
+<meta name="twitter:title" content="在Github Pages上搭建hexo">
+<meta name="twitter:description" content="前言折腾了一阵，终于开了Github，然后利用Github Pages搭了这个hexo博客。之前用过wordpress，不过一直都找不到什么稳定的免费空间，换空间的时候数据迁移也相当麻烦，最后也就没怎么折腾了。最近看到hexo这个静态博客，简单轻便，不需要数据库，配合Github，创建以及发布文章都非常的方便，真是有种相见恨晚的感觉，于是就简单记录一下。">
   
     <link rel="alternative" href="/atom.xml" title="xiaobaitwo的博客" type="application/atom+xml">
   
@@ -193,11 +193,11 @@
 	</div>
 </nav>
 
-      <div class="body-wrap"><article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-how-to-build-hexo" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/06/22/hello-world/" class="article-date">
-  	<time datetime="2016-06-22T02:00:54.516Z" itemprop="datePublished">2016-06-22</time>
+      <a href="/2016/06/23/how-to-build-hexo/" class="article-date">
+  	<time datetime="2016-06-23T06:13:50.000Z" itemprop="datePublished">2016-06-23</time>
 </a>
     </div>
   
@@ -210,7 +210,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Hello World
+      在Github Pages上搭建hexo
     </h1>
   
 
@@ -226,7 +226,25 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>总算搭好了hexo博客，继续折腾ing…</p>
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a><strong>前言</strong></h2><p>折腾了一阵，终于开了Github，然后利用Github Pages搭了这个hexo博客。之前用过wordpress，不过一直都找不到什么稳定的免费空间，换空间的时候数据迁移也相当麻烦，最后也就没怎么折腾了。最近看到hexo这个静态博客，简单轻便，不需要数据库，配合Github，创建以及发布文章都非常的方便，真是有种相见恨晚的感觉，于是就简单记录一下。<a id="more"></a></p>
+<h2 id="前提"><a href="#前提" class="headerlink" title="前提"></a><strong>前提</strong></h2><p>Github账号  </p>
+<p>开启Github Pages </p>
+<p>Git客户端  </p>
+<p>Node.js运行环境</p>
+<p>以上申请以及安装操作这里就省略了，具体以搭建hexo过程为主。</p>
+<h2 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a><strong>安装hexo</strong></h2><p>打开命令行窗口，输入以下命令  </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo</span><br></pre></td></tr></table></figure>
+<p>安装完成后选择一个目录，如<code>E:\hexo</code>,将命令行路径切换到这个目录，输入以下命令初始化hexo</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
+<p>这样hexo就会在当前目录建立网站所需要的文件。</p>
+<h2 id="预览本地hexo"><a href="#预览本地hexo" class="headerlink" title="预览本地hexo"></a><strong>预览本地hexo</strong></h2><p>我们可以在本地开启服务预览我们之前安装的hexo网页，具体命令如下</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g  </span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+<p>之后我们将看到命令行窗口输出如下信息代表本地服务启动成功</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">INFO  Start processing</span><br><span class="line">INFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.</span><br></pre></td></tr></table></figure>
+<p>我们可以打开浏览器，在地址栏输入<code>http://localhost:4000</code>,就可以看到我们刚搭建的博客啦！不过这个只是给我们本地预览的，我们还需要把本地的hexo文件上传到Github上面去，这样就能够使用Github提供给我们的域名访问我们的博客了。</p>
+<h2 id="部署本地hexo到Github"><a href="#部署本地hexo到Github" class="headerlink" title="部署本地hexo到Github"></a><strong>部署本地hexo到Github</strong></h2><p>在部署之前我们还需要做一些配置，使用文本编辑器打开hexo目录下的<code>_config.yml</code>文件，这是hexo的全局配置文件，找到最后的<code>deploy</code>字段，然后修改成如下代码</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: https://github.com/username/username.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+<p>其中的 <em>repository</em> 填写的是你的Github Pages的仓库地址</p>
 
       
     </div>
@@ -236,15 +254,11 @@
     
 <nav id="article-nav">
   
-    <a href="/2016/06/23/how-to-build-hexo/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          在Github Pages上搭建hexo
-        
-      </div>
-    </a>
   
+    <a href="/2016/06/22/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hello World</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
   
 </nav>
 
@@ -258,7 +272,7 @@
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="hello-world" data-title="Hello World" data-url="http://yoursite.com/2016/06/22/hello-world/"></div>
+	<div class="ds-thread" data-thread-key="how-to-build-hexo" data-title="在Github Pages上搭建hexo" data-url="http://yoursite.com/2016/06/23/how-to-build-hexo/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
