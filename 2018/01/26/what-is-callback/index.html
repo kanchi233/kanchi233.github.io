@@ -5,17 +5,17 @@
   
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <link rel="dns-prefetch" href="http://kanchiiii.github.io">
+  <link rel="dns-prefetch" href="http://kanchi233.github.io">
   <title>Java回调机制的理解 | Kanchi的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="最近在复习Java的一些重要概念，发现自己对回调（Callback）理解的不透彻，但在许多框架以及实际应用中又都会用到回调机制，所以在查阅了一些资料后，想结合自身的理解谈一谈，到底什么是回调。 回调函数，顾名思义，有那么一个函数会被回过头来调用。那么问题来了，到底是谁调用谁，在什么时候调用，怎么调用？为了更加直观，我们举个栗子吧！">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Java回调机制的理解">
-<meta property="og:url" content="http://kanchiiii.github.io/2018/01/26/what-is-callback/index.html">
+<meta property="og:url" content="http://kanchi233.github.io/2018/01/26/what-is-callback/index.html">
 <meta property="og:site_name" content="Kanchi的博客">
 <meta property="og:description" content="最近在复习Java的一些重要概念，发现自己对回调（Callback）理解的不透彻，但在许多框架以及实际应用中又都会用到回调机制，所以在查阅了一些资料后，想结合自身的理解谈一谈，到底什么是回调。 回调函数，顾名思义，有那么一个函数会被回过头来调用。那么问题来了，到底是谁调用谁，在什么时候调用，怎么调用？为了更加直观，我们举个栗子吧！">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-01-26T08:39:16.142Z">
+<meta property="og:updated_time" content="2018-01-30T08:18:38.350Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java回调机制的理解">
 <meta name="twitter:description" content="最近在复习Java的一些重要概念，发现自己对回调（Callback）理解的不透彻，但在许多框架以及实际应用中又都会用到回调机制，所以在查阅了一些资料后，想结合自身的理解谈一谈，到底什么是回调。 回调函数，顾名思义，有那么一个函数会被回过头来调用。那么问题来了，到底是谁调用谁，在什么时候调用，怎么调用？为了更加直观，我们举个栗子吧！">
@@ -288,6 +288,7 @@ button.setOnClickListener(new View.OnClickListener() {
 <p>In computer programming, a callback is any executable code that is passed as an argument to other code, which is expected to call back (execute) the argument at a given time.</p>
 </blockquote>
 <p>也就是说，回调其实是指<strong>通过函数参数传递到其它代码的，某一块可执行代码的引用，而它可以在某个给定的时间被调用(执行)</strong>。</p>
+<p>由于在Java中方法不能直接作为参数进行传递，所以只能通过传递自身类的引用从而在B类中执行A类的某个方法。</p>
 <p>通过上述这些例子，再结合定义，我想回调就不难理解了。</p>
 
       
@@ -368,7 +369,7 @@ button.setOnClickListener(new View.OnClickListener() {
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://kanchiiii.github.io/2018/01/26/what-is-callback/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://kanchi233.github.io/2018/01/26/what-is-callback/" alt="微信分享二维码">
     </div>
 </div>
 
